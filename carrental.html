@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>บริการรถเช่า | GL Car & Guide</title>
+  <style>
+     @font-face {
+      font-family: 'Phetsarath OT';
+      src: url('fonts/PhetsarathOT.ttf') format('truetype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Phetsarath OT', sans-serif;
+    }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+      color: #333;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #f9c846;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 6px solid #f9c846;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #1a1a1a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #f9c846;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #f9c846;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    a.back:hover {
+      background: #e8b733;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CAR RENTAL SERVICE</h1>
+  </header>
+
+  <div class="container">
+    <h2>🚗 ເລືອກລົດທີ່ໃຊ້ສຳຫຼັບ Trip ຂອງເຈົ້າ</h2>
+
+    <div class="grid">
+
+      <div class="card">
+         <a href="infor.html" style="text-decoration: none; color: inherit;"> 
+        <img src="car/for.jpg" alt="Van VIP">
+        <div class="card-content">
+          <h3>Fortunes Regender 2024 <br> ເກຍໂອໂຕປຸ່ມສະຕາດ</h3>
+          <p>ຄຳອະທິບາຍລົດ</p>
+          <p class="price">120$ / Day</p>
+        </div></a>
+      </div>
+
+      <div class="card">
+        <img src="car/so.jpg" alt="SUV 7 ที่นั่ง">
+        <div class="card-content">
+          <h3>KN - 2024 <br> Movement that inspires <br>ລົດເກຍ soluto ປີ2024 ເກຍໂອໂຕ ມີກ້ອງຖອຍ</h3>
+           <p>ຄຳອະທິບາຍລົດ</p>
+          <p class="price">45$ / Day</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car/vigo.jpg"alt="รถเก๋ง Eco">
+        <div class="card-content">
+          <h3>Vigo champ-2013 <br> ເກຍກະປຸກໂຟວິນ</h3>
+           <p>ຄຳອະທິບາຍລົດ</p>
+          <p class="price">100$ / Day</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car/ford.jpg" alt="SUV 7 ที่นั่ง">
+        <div class="card-content">
+          <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
+           <p>ຄຳອະທິບາຍລົດ</p>
+          <p class="price">120$ / Day</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car/ford2.jpg" alt="SUV 7 ที่นั่ง">
+        <div class="card-content">
+          <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
+           <p>ຄຳອະທິບາຍລົດ</p>
+          <p class="price">120$ / Day</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back">← กลับหน้าแรก</a>
+  </div>
+
+</body>
+</html>
