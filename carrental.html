@@ -53,12 +53,15 @@
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 30px;
+      justify-content: center;
     }
 
     .card {
+      flex: 1 1 280px;
+      max-width: 280px;
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -136,8 +139,12 @@
       }
 
       .grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        max-width: 45%;
       }
 
       .card h3 {
@@ -169,8 +176,12 @@
       }
 
       .grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .card {
+        max-width: 100%;
       }
 
       h2 {
@@ -207,9 +218,9 @@
 
       <div class="card">
          <a href="infor.html" style="text-decoration: none; color: inherit;"> 
-        <img src="for.jpg" alt="Fortuner Regender 2024" />
+        <img src="for.jpg" alt="Van VIP" />
         <div class="card-content">
-          <h3>Fortuner Regender 2024 <br> ເກຍໂອໂຕປຸ່ມສະຕາດ</h3>
+          <h3>Fortunes Regender 2024 <br> ເກຍໂອໂຕປຸ່ມສະຕາດ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">120$ / Day</p>
         </div></a>
@@ -218,23 +229,23 @@
       <div class="card">
         <img src="so.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
-          <h3>KN - 2024 <br> Movement that inspires <br>ລົດເກຍ Soluto ປີ 2024 ເກຍໂອໂຕ ມີກ້ອງຖອຍ</h3>
+          <h3>KN - 2024 <br> Movement that inspires <br>ລົດເກຍ soluto ປີ2024 ເກຍໂອໂຕ ມີກ້ອງຖອຍ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">45$ / Day</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="vigo.jpg" alt="Vigo champ 2013" />
+        <img src="vigo.jpg" alt="รถเก๋ง Eco" />
         <div class="card-content">
-          <h3>Vigo champ - 2013 <br> ເກຍກະປຸກໂຟວິນ</h3>
+          <h3>Vigo champ-2013 <br> ເກຍກະປຸກໂຟວິນ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">100$ / Day</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="ford.jpg" alt="Ford Ranger 2024" />
+        <img src="ford.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
           <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
@@ -243,7 +254,7 @@
       </div>
 
       <div class="card">
-        <img src="ford2.jpg" alt="Ford Ranger 2024" />
+        <img src="ford2.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
           <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
