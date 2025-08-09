@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>บริการรถเช่า | GL Car & Guide</title>
   <style>
-     @font-face {
+    @font-face {
       font-family: 'Phetsarath OT';
       src: url('fonts/PhetsarathOT.ttf') format('truetype');
     }
@@ -74,6 +74,7 @@
       width: 100%;
       height: 180px;
       object-fit: cover;
+      display: block;
     }
 
     .card-content {
@@ -84,6 +85,7 @@
       font-size: 20px;
       margin-bottom: 10px;
       color: #f9c846;
+      line-height: 1.3;
     }
 
     .card p {
@@ -112,6 +114,84 @@
     a.back:hover {
       background: #e8b733;
     }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      .container {
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .card p,
+      .card .price {
+        font-size: 13px;
+      }
+
+      a.back {
+        margin-top: 20px;
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+      }
+
+      header h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .card p,
+      .card .price {
+        font-size: 12px;
+      }
+
+      a.back {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -127,7 +207,7 @@
 
       <div class="card">
          <a href="infor.html" style="text-decoration: none; color: inherit;"> 
-        <img src="for.jpg" alt="Van VIP">
+        <img src="for.jpg" alt="Van VIP" />
         <div class="card-content">
           <h3>Fortunes Regender 2024 <br> ເກຍໂອໂຕປຸ່ມສະຕາດ</h3>
           <p>ຄຳອະທິບາຍລົດ</p>
@@ -136,37 +216,37 @@
       </div>
 
       <div class="card">
-        <img src="so.jpg" alt="SUV 7 ที่นั่ง">
+        <img src="so.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
           <h3>KN - 2024 <br> Movement that inspires <br>ລົດເກຍ soluto ປີ2024 ເກຍໂອໂຕ ມີກ້ອງຖອຍ</h3>
-           <p>ຄຳອະທິບາຍລົດ</p>
+          <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">45$ / Day</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="vigo.jpg"alt="รถเก๋ง Eco">
+        <img src="vigo.jpg" alt="รถเก๋ง Eco" />
         <div class="card-content">
           <h3>Vigo champ-2013 <br> ເກຍກະປຸກໂຟວິນ</h3>
-           <p>ຄຳອະທິບາຍລົດ</p>
+          <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">100$ / Day</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="ford.jpg" alt="SUV 7 ที่นั่ง">
+        <img src="ford.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
           <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
-           <p>ຄຳອະທິບາຍລົດ</p>
+          <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">120$ / Day</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="ford2.jpg" alt="SUV 7 ที่นั่ง">
+        <img src="ford2.jpg" alt="SUV 7 ที่นั่ง" />
         <div class="card-content">
           <h3>Ford Ranger - 2024 <br>ເກຍໂອໂຕ Auto 4W <br> ມີກ້ອງຖອຍ</h3>
-           <p>ຄຳອະທິບາຍລົດ</p>
+          <p>ຄຳອະທິບາຍລົດ</p>
           <p class="price">120$ / Day</p>
         </div>
       </div>
@@ -178,4 +258,3 @@
 
 </body>
 </html>
-
