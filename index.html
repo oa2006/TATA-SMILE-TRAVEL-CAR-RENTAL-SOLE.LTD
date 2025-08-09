@@ -88,7 +88,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);;
+      grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
 
@@ -125,6 +125,38 @@
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+    }
+
+    /* เพิ่มเติมสำหรับมือถือ */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .card img {
+        height: auto;
+      }
+      .hero h2 {
+        font-size: 24px;
+        padding: 0 10px;
+      }
+      header {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -304,5 +336,3 @@
 
 </body>
 </html>
-
-
