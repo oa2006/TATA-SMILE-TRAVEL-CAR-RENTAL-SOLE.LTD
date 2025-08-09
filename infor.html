@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>wat phou salao Gallery</title>
+  <meta charset="UTF-8" />
+  <title>Fortuner car gallery</title>
   <style>
     body {
       font-family: 'Phetsarath OT', sans-serif;
@@ -15,7 +15,7 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       margin-top: 30px;
     }
@@ -25,6 +25,7 @@
       object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #ddd; /* ถ้ารูปว่างจะเห็นพื้นหลังสีเทาอ่อน */
     }
     a.back {
       display: inline-block;
@@ -40,7 +41,7 @@
     a.back:hover {
       background: #e8b733;
     }
-      header {
+    header {
       margin-top: 50px;
       background: #1a1a1a;
       color: #fff;
@@ -59,7 +60,28 @@
       margin: 0;
       color: #f9c846;
     }
-    
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      header img {
+        height: 50px;
+      }
+      header h1 {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -68,24 +90,22 @@
   <h2 style="font-size: 32px; color: #e8b733; margin: 0;">
     🖼️ Fortuner car gallery
   </h2>
-  
-
   <div class="gallery">
-    <img src="infor.jpg" alt="ภาพ 1">
-    <img src="" alt="ภาพ 2">
-    <img src="" alt="ภาพ 3">
-    <img src="" alt="ภาพ 4">
+    <img src="infor.jpg" alt="ภาพ 1" />
+    <img src="" alt="ภาพ 2" />
+    <img src="" alt="ภาพ 3" />
+    <img src="" alt="ภาพ 4" />
   </div>
 
   <a href="index.html" class="back">← กลับหน้าแรก</a>
+ </div>
 
-    <header>
-    <div style="display: flex; align-items: center;">
-      <img src="logo tata smile.webp" alt="โลโก้บริษัท" >
-      <h1>TATA SMILE TRAVEL & CAR RENTAL SOLE.LTD</h1>
-    </div>
-  </header>
+ <header>
+  <div style="display: flex; align-items: center;">
+    <img src="logo tata smile.webp" alt="โลโก้บริษัท" />
+    <h1>TATA SMILE TRAVEL & CAR RENTAL SOLE.LTD</h1>
+  </div>
+ </header>
   
 </body>
 </html>
-
