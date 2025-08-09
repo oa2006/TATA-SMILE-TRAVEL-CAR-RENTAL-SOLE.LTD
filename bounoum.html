@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title> palace gallery</title>
+  <style>
+    body {
+      font-family: 'Phetsarath OT', sans-serif;
+      padding: 20px;
+      background: #f3f3f3;
+      text-align: center;
+    }
+    h2 {
+      color: #e8b733;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #f9c846;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    a.back:hover {
+      background: #e8b733;
+    }
+      header {
+      margin-top: 50px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      border-radius: 8px;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+      color: #f9c846;
+    }
+    
+  </style>
+</head>
+<body>
+
+ <div style="background: #fff8e1; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; margin-bottom: 30px;">
+  <h2 style="font-size: 32px; color: #e8b733; margin: 0;">
+    🖼️ palace gallery
+  </h2>
+  <p style="color: #666; margin-top: 10px;">Explore the beauty of Wat-Phou-Salao waterfall through our hand-picked photo collection.</p>
+</div>
+
+  <div class="gallery">
+    <img src="champa_1.jpeg" alt="ภาพ 1">
+    <img src="champa_2.jpeg" alt="ภาพ 2">
+    <img src="champa_3.jpeg" alt="ภาพ 3">
+    <img src="champa_4.jpeg" alt="ภาพ 4">
+  </div>
+
+  <a href="index.html" class="back">← กลับหน้าแรก</a>
+
+    <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo tata smile.webp" alt="โลโก้บริษัท" >
+      <h1>TATA SMILE TRAVEL & CAR RENTAL SOLE.LTD</h1>
+    </div>
+  </header>
+  
+</body>
+</html>
