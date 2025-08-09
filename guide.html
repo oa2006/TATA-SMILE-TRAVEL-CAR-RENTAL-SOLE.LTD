@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>รายละเอียดบริการ | GL Car & Guide</title>
   <style>
     @font-face {
@@ -32,6 +32,7 @@
     header h1 {
       margin: 0;
       color: #f9c846;
+      font-size: 24px;
     }
 
     .container {
@@ -45,15 +46,18 @@
       padding-left: 10px;
       margin-bottom: 20px;
       color: #1a1a1a;
+      font-size: 28px;
     }
 
     .service-table {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 40px;
+      font-size: 16px;
     }
 
-    .service-table th, .service-table td {
+    .service-table th,
+    .service-table td {
       border: 1px solid #ccc;
       padding: 12px 15px;
       text-align: left;
@@ -81,22 +85,114 @@
       text-decoration: none;
       border-radius: 6px;
       transition: 0.3s ease;
+      font-size: 16px;
     }
 
     a.back:hover {
       background: #e8b733;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .service-table {
+        font-size: 14px;
+      }
+
+      a.back {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 10px;
+      }
+
+      header {
+        padding: 12px 10px;
+      }
+
+      header h1 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .service-table,
+      .service-table thead,
+      .service-table tbody,
+      .service-table th,
+      .service-table td,
+      .service-table tr {
+        display: block;
+        width: 100%;
+      }
+
+      .service-table thead tr {
+        display: none; /* ซ่อนหัวตารางบนมือถือ */
+      }
+
+      .service-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+      }
+
+      .service-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      .service-table td:last-child {
+        border-bottom: none;
+      }
+
+      .service-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #444;
+      }
+
+      a.back {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>SERVICE DETAILS </h1>
+    <h1>SERVICE DETAILS</h1>
   </header>
  
   <div class="container">
-
-    
 
     <h2>🧭 ບໍລິການໄກ໋ນຳທ່ຽວ</h2>
     <table class="service-table">
@@ -109,19 +205,19 @@
       </thead>
       <tbody>
         <tr>
-          <td>ໄກ໋ທ່ອງຖີ່ນ</td>
-          <td>พูดไทย/อังกฤษ พาเที่ยวทั่วจังหวัด</td>
-          <td>500 THB </td>
+          <td data-label="ປະເພດໄກ໋">ໄກ໋ທ່ອງຖີ່ນ</td>
+          <td data-label="ຄວາມສາມາດ">พูดไทย/อังกฤษ พาเที่ยวทั่วจังหวัด</td>
+          <td data-label="ລາຄາ/ວັນ">500 THB</td>
         </tr>
         <tr>
-          <td>ໄກ໋ມືອາຊີບ</td>
-          <td>มีบัตรไกด์ พาเที่ยวได้ทั่วประเทศ</td>
-          <td>1000 THB</td>
+          <td data-label="ປະເພດໄກ໋">ໄກ໋ມືອາຊີບ</td>
+          <td data-label="ຄວາມສາມາດ">มีบัตรไกด์ พาเที่ยวได้ทั่วประเทศ</td>
+          <td data-label="ລາຄາ/ວັນ">1000 THB</td>
         </tr>
         <tr>
-          <td>ໄກ໋ຕ່າງຊາດ</td>
-          <td>ภาษาจีน/เกาหลี/ญี่ปุ่น</td>
-          <td>80 $ </td>
+          <td data-label="ປະເພດໄກ໋">ໄກ໋ຕ່າງຊາດ</td>
+          <td data-label="ຄວາມສາມາດ">ภาษาจีน/เกาหลี/ญี่ปุ่น</td>
+          <td data-label="ລາຄາ/ວັນ">80 $</td>
         </tr>
       </tbody>
     </table>
